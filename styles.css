@@ -178,27 +178,6 @@ header {
 	margin: 4rem 0 2rem;
 }
 
-.holder {
-	display: flex;
-	justify-content: space-evenly;
-	margin-bottom: 2.75rem;
-	font-size: 20px;
-	letter-spacing: 3px;
-	color: #fff;
-	text-transform: uppercase;
-}
-
-.holder:first-child {
-	padding-left: 28px;
-}
-
-.bg_circle {
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	background: hsl(237, 49%, 15%);
-}
-
 /*	#####################
 	FOOTER RULES STYLES 
 #####################	*/
