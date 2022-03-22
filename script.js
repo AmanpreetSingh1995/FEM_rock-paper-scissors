@@ -10,9 +10,11 @@ const stage2 = document.querySelector(".start");
 const game = document.getElementById("game");
 
 const scoreEL = document.getElementById("score");
-let scores = 0;
-localStorage.getItem(scores);
-scoreL.textContent = scores;
+
+let scores = sessionStorage.getItem("scores")
+	? sessionStorage.getItem("scores")
+	: 0;
+scoreEL.textContent = scores;
 
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
@@ -62,7 +64,7 @@ function gameResult(user, value) {
 	) {
 		scores++;
 		scoreEL.textContent = scores;
-		localStorage.setItem("score", scores);
+		sessionStorage.setItem("scores", scores);
 
 		winOrLose.classList.remove("playerWinOrLose");
 		win.classList.remove("playerWinOrLose");
