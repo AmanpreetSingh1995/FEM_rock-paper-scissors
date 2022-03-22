@@ -30,7 +30,7 @@
 
         <div class="result">
           <h5 class="heading">score</h5>
-          <h1 class="score" id="score">0</h1>
+          <h3 class="score" id="score">0</h3>
         </div>
 
       </div>
@@ -62,7 +62,37 @@
 
       <div class="start hide">
 
+        <div class="userSelection">
+          <h2>you picked</h2>
+          <div class="rock" id="user_rock"></div>
+          <div class="paper" id="user_paper"></div>
+          <div class="scissors" id="user_scissors"></div>
+        </div>
 
+        <div class="win_lose playerWinOrLose" id="win_lose">
+          <div class="win playerWinOrLose" id="win">
+            <h1>WIN</h1>
+          </div>
+
+          <div class="tie playerWinOrLose" id="tie">
+            <h1>TIE</h1>
+          </div>
+
+          <div class="lose playerWinOrLose" id="lose">
+            <h1>LOSE</p>
+          </div>
+
+          <button class="playAgain" id="playAgain">
+            <h5 class="btn">Play again</h5>
+          </button>
+        </div>
+
+        <div class="computerSelection">
+          <h2>the house picked</h2>
+          <div class="rock" id="computer_rock"></div>
+          <div class="paper" id="computer_paper"></div>
+          <div class="scissors" id="computer_scissors"></div>
+        </div>
 
       </div>
 

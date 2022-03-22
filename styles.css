@@ -10,15 +10,33 @@
 	overflow: hidden;
 }
 
+h1,
 h2 {
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	color: #fff;
+	margin: 10px;
 }
 
 button {
 	background: none;
 	border: none;
 	cursor: pointer;
+}
+
+.rules,
+.playAgain {
+	width: 130px;
+	height: 42px;
+	border: 2px solid white;
+	border-radius: 6px;
+}
+
+.btn {
+	font-size: 12px;
+	color: #fff;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
 .fcc {
@@ -175,7 +193,49 @@ header {
 #####################	*/
 
 .start {
-	margin: 4rem 0 2rem;
+	margin-top: 1rem;
+	padding-top: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+.userSelection,
+.computerSelection {
+	height: 350px;
+	width: 320px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.userSelection .rock,
+.userSelection .paper,
+.userSelection .scissors {
+	top: 46%;
+	left: 30%;
+	width: 12rem;
+	height: 12rem;
+}
+
+.computerSelection .rock,
+.computerSelection .paper,
+.computerSelection .scissors {
+	top: 46%;
+	left: 30%;
+	width: 12rem;
+	height: 12rem;
+}
+
+/*	#####################
+	GAME STAGE 3 STYLES 
+#####################	*/
+
+.win_lose {
+	width: 236px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 /*	#####################
@@ -188,24 +248,6 @@ footer {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-}
-
-.rules {
-	width: 130px;
-	height: 42px;
-	border: 2px solid white;
-	border-radius: 6px;
-}
-
-.rules_hide {
-	display: none;
-}
-
-.btn {
-	font-size: 12px;
-	color: #fff;
-	letter-spacing: 2px;
-	text-transform: uppercase;
 }
 
 .rules_modal {
@@ -226,6 +268,8 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+.modal_heading h2 {
 	color: hsl(229, 25%, 31%);
 }
 
@@ -233,6 +277,10 @@ footer {
 	padding: 34px;
 }
 
-.hide {
+.hide,
+.rules_hide,
+.userSelectionHide,
+.computerSelectionHide,
+.playerWinOrLose {
 	display: none;
 }
