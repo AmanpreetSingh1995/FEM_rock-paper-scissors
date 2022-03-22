@@ -8,8 +8,11 @@ const mainContainer = document.querySelector(".main_container");
 
 const stage2 = document.querySelector(".start");
 const game = document.getElementById("game");
-const scoreEl = document.getElementById("score");
+
+const scoreEL = document.getElementById("score");
 let scores = 0;
+localStorage.getItem(scores);
+scoreL.textContent = scores;
 
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
@@ -58,8 +61,8 @@ function gameResult(user, value) {
 		(user === "scissors" && value === "paper")
 	) {
 		scores++;
-		scoreEl.textContent = scores;
-		localStorage.setItem(scoreEl, scores);
+		scoreEL.textContent = scores;
+		localStorage.setItem("score", scores);
 
 		winOrLose.classList.remove("playerWinOrLose");
 		win.classList.remove("playerWinOrLose");
