@@ -1,0 +1,299 @@
+/*	#####################
+	COMMON STYLES 
+#####################	*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Barlow Semi Condensed", sans-serif;
+	overflow: hidden;
+}
+
+h1,
+h2 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #fff;
+	margin: 10px;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.rules,
+.go_back,
+.playAgain {
+	width: 130px;
+	height: 42px;
+	border: 2px solid white;
+	border-radius: 6px;
+}
+
+.go_back {
+	margin-right: 10px;
+}
+
+.btn {
+	font-size: 12px;
+	color: #fff;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.fcc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*	#####################
+	MAIN STYLES 
+#####################	*/
+
+.main_container {
+	height: 100vh;
+	background: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.overlay {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background: #1c1414;
+}
+
+.container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100%;
+}
+
+/*	#####################
+	HEADER STYLES 
+#####################	*/
+
+header {
+	width: 700px;
+	padding: 16px 0;
+	margin: auto;
+}
+
+.header {
+	height: 136px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px;
+	border: 3px solid hsl(217, 16%, 45%);
+	border-radius: 10px;
+}
+
+.result {
+	width: 110px;
+	height: 94px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	background: #fff;
+	border-radius: 8px;
+}
+
+.heading {
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: hsl(229, 64%, 46%);
+}
+
+.score {
+	font-size: 58px;
+	font-weight: 700;
+	color: hsl(229, 25%, 31%);
+}
+
+/*	#####################
+	GAME STYLES 
+#####################	*/
+
+/*	#####################
+	GAME STAGE 1 STYLES 
+#####################	*/
+
+.game {
+	margin-top: 5rem;
+}
+
+.rockContainer,
+.paperContainer,
+.scissorsContainer {
+	position: absolute;
+	height: 8.5rem;
+	width: 8.5rem;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.rockContainer {
+	top: 70%;
+	left: 45%;
+}
+
+.paperContainer {
+	top: 30%;
+	left: 35%;
+}
+
+.scissorsContainer {
+	top: 30%;
+	left: 55%;
+}
+
+.rock,
+.paper,
+.scissors {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 8.5rem;
+	width: 8.5rem;
+	border: 1.125rem solid;
+	border-radius: 50%;
+	box-sizing: border-box;
+	z-index: 2;
+}
+
+.rock {
+	color: hsl(349, 70%, 56%);
+	box-shadow: inset 0 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.5rem 0 hsl(349, 71%, 52%);
+	background: url(../images/icon-rock.svg), white;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50%;
+}
+
+.paper {
+	color: hsl(230, 89%, 65%);
+	box-shadow: inset 0 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.5rem 0 hsl(230, 89%, 62%);
+	background: url(../images/icon-paper.svg), white;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50%;
+}
+
+.scissors {
+	color: hsl(40, 84%, 53%);
+	box-shadow: inset 0 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.5rem 0 hsl(39, 89%, 49%);
+	background: url(../images/icon-scissors.svg), white;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50%;
+}
+
+/*	#####################
+	GAME STAGE 2 STYLES 
+#####################	*/
+
+.start {
+	margin-top: 1rem;
+	padding-top: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+.userSelection,
+.computerSelection {
+	height: 350px;
+	width: 320px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.userSelection .rock,
+.userSelection .paper,
+.userSelection .scissors {
+	top: 46%;
+	left: 30%;
+	width: 12rem;
+	height: 12rem;
+}
+
+.computerSelection .rock,
+.computerSelection .paper,
+.computerSelection .scissors {
+	top: 46%;
+	left: 30%;
+	width: 12rem;
+	height: 12rem;
+}
+
+/*	#####################
+	GAME STAGE 3 STYLES 
+#####################	*/
+
+.win_lose {
+	width: 236px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*	#####################
+	FOOTER RULES STYLES 
+#####################	*/
+
+footer {
+	height: 74px;
+	padding-right: 30px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.rules_modal {
+	position: absolute;
+	z-index: 9;
+	width: 400px;
+	height: 414px;
+	padding: 14px;
+	top: 22%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: white;
+	border-radius: 4px;
+	box-shadow: 2px 5px 16px -6px rgba(0, 0, 0, 0.75);
+}
+
+.modal_heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.modal_heading h2 {
+	color: hsl(229, 25%, 31%);
+}
+
+.rule {
+	padding: 34px;
+}
+
+.hide,
+.mode_hide,
+.rules_hide,
+.userSelectionHide,
+.computerSelectionHide,
+.playerWinOrLose {
+	display: none;
+}

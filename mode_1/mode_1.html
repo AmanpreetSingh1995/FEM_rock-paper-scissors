@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+    <link rel="stylesheet" href="./mode_1.css">
+
+</head>
+
+<body>
+
+    <main class="main_container">
+
+        <header>
+            <div class="header">
+
+                <img src="../images/logo.svg" alt="Logo_mode_1">
+
+                <div class="result">
+                    <h5 class="heading">score</h5>
+                    <h3 class="score" id="score"></h3>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- GAME SECTION  -->
+
+        <section>
+
+            <!-- STAGE 1 -->
+            <div class="game fcc" id="game">
+                <img src="../images/bg-triangle.svg" alt="triangle">
+
+                <div class="rockContainer">
+                    <div class="rock" id="rock"></div>
+                </div>
+
+                <div class="paperContainer">
+                    <div id="paper" class="paper"></div>
+                </div>
+
+                <div class="scissorsContainer">
+                    <div id="scissors" class="scissors"></div>
+                </div>
+
+            </div>
+
+            <!-- STAGE 2 -->
+
+            <div class="start hide">
+
+                <div class="userSelection">
+                    <h2>you picked</h2>
+                    <div class="rock" id="user_rock"></div>
+                    <div class="paper" id="user_paper"></div>
+                    <div class="scissors" id="user_scissors"></div>
+                </div>
+
+                <div class="win_lose playerWinOrLose" id="win_lose">
+                    <div class="win playerWinOrLose" id="win">
+                        <h1>WIN</h1>
+                    </div>
+
+                    <div class="tie playerWinOrLose" id="tie">
+                        <h1>TIE</h1>
+                    </div>
+
+                    <div class="lose playerWinOrLose" id="lose">
+                        <h1>LOSE</p>
+                    </div>
+
+                    <button class="playAgain" id="playAgain">
+                        <h5 class="btn">Play again</h5>
+                    </button>
+                </div>
+
+                <div class="computerSelection">
+                    <h2>the house picked</h2>
+                    <div class="rock" id="computer_rock"></div>
+                    <div class="paper" id="computer_paper"></div>
+                    <div class="scissors" id="computer_scissors"></div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- RULES SECTION -->
+
+        <footer>
+
+            <button class="go_back" id="go_back">
+                <h5 class="btn">Go Back</h5>
+            </button>
+
+            <button class="rules" id="rules">
+                <h5 class="btn">rules</h5>
+            </button>
+
+            <div class="rules_modal rules_hide" id="rules_modal">
+
+                <div class="modal_heading">
+                    <h2>rules</h2>
+
+                    <button id="close">
+                        <img src="../images/icon-close.svg" alt="Close">
+                    </button>
+                </div>
+
+                <img src="../images/image-rules.svg" alt="Rules" class="rule" id="rules_mode_1">
+
+            </div>
+
+        </footer>
+
+    </main>
+
+    <script src="./mode_1.js"></script>
+</body>
+
+</html>
