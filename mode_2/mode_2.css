@@ -37,6 +37,10 @@ button {
 	margin-right: 10px;
 }
 
+.no_click {
+	pointer-events: none;
+}
+
 .btn {
 	font-size: 12px;
 	color: #fff;
