@@ -121,11 +121,13 @@ goBack.addEventListener("click", function () {
 rules.addEventListener("click", function () {
 	rulesModal.classList.remove("rules_hide");
 	mainContainer.classList.add("overlay");
+	game.classList.add("no_click");
 });
 
 close.addEventListener("click", function () {
 	rulesModal.classList.add("rules_hide");
 	mainContainer.classList.remove("overlay");
+	game.classList.remove("no_click");
 });
 
 // $$$ GAME $$$
