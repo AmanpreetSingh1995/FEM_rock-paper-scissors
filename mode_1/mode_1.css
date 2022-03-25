@@ -24,6 +24,10 @@ button {
 	cursor: pointer;
 }
 
+.no_click {
+	pointer-events: none;
+}
+
 .rules,
 .go_back,
 .playAgain {
