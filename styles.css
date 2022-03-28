@@ -60,4 +60,8 @@ button {
 		display: flex;
 		flex-direction: column;
 	}
+	
+	.modes {
+		height: 70%;
+	}
 }
