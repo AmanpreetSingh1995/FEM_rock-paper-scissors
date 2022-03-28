@@ -303,8 +303,7 @@ footer {
 }
 
 @media screen and (max-width: 756px) {
-	.container {
-		display: flex;
-		flex-direction: column;
+	header {
+		width: 400px;
 	}
 }
