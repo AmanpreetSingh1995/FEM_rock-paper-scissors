@@ -84,12 +84,12 @@ button {
 #####################	*/
 
 header {
+	width: 700px;
 	padding: 16px 0;
 	margin: auto;
 }
 
 .header {
-	width: 700px;
 	height: 136px;
 	display: flex;
 	justify-content: space-between;
