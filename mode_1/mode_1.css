@@ -301,3 +301,10 @@ footer {
 .playerWinOrLose {
 	display: none;
 }
+
+@media screen and (max-width: 756px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+}
